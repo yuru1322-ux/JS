@@ -1,0 +1,81 @@
+
+/* =========================
+   モーダル
+========================= */
+.modal-head{
+  margin-top: 100px;
+}
+
+.modal {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+
+  /* 最初は非表示  */
+  opacity: 0;
+  visibility: hidden;
+
+  transition: opacity 0.3s;
+}
+
+
+/* モーダルを開いた状態 */
+.modal.is-active {
+  opacity: 1;
+  visibility: visible;
+}
+
+
+/* 背景 */
+.modal__overlay {
+  position: absolute;
+  inset: 0;
+
+  background: rgba(0, 0, 0, 0.5);
+}
+
+
+/* モーダル本体 */
+.modal__content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: min(90%, 500px);
+  padding: 40px;
+
+  background: #fff;
+  border-radius: 8px;
+}
+
+.modal__items{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal__items img{
+  height: 250px;
+}
+.modal__text{
+  padding-inline: 2rem;
+}
+
+/* 閉じるボタン */
+.modal__close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+
+  border: none;
+  background: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+
+/* 開くボタン */
+.modal-open {
+  padding: 12px 24px;
+  cursor: pointer;
+}
