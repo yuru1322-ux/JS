@@ -1,92 +1,83 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="説明文">
-  <title>タイトル</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="説明文" />
+    <title>タイトル</title>
 
-  <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
-  <link rel="stylesheet" href="./css/style.css">
-  <script type="module" src="./js/script.js" defer></script>
-</head>
-<body>
-
-  <section class="slider">
-
-  <div class="slider-images">
-    <img src="images/works1.png" alt="">
-    <img src="images/works2.png" alt="">
-    <img src="images/works3.png" alt="">
-  </div>
-
-  <button class="prev">＜</button>
-  <button class="next">＞</button>
-
-  <div class="dots">
-    <button class="dot active"></button>
-    <button class="dot"></button>
-    <button class="dot"></button>
-  </div>
-
-</section>
-
-<section class="faq">
-  <div class="faq__inner">
-    <h2 class="faq__title">FAQ</h2>
-
-    <div class="faq__item">
-      <button
-        class="faq__question"
-        type="button"
-        aria-expanded="false"
-      >
-        <span>Q. サービスの利用には予約が必要ですか？</span>
-        <span class="faq__icon"></span>
-      </button>
-
-      <div class="faq__answer">
-        <div class="faq__answer-inner">
-          A. はい、事前予約をお願いしています。<br>お問い合わせフォームよりご連絡ください。
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script type="module" src="./js/script.js" defer></script>
+  </head>
+  <body>
+    <section class="slider">
+      <div class="slider-images">
+        <div class="slider-track">
+          <img src="images/works1.png" alt="" />
+          <img src="images/works2.png" alt="" />
+          <img src="images/works3.png" alt="" />
+          <img src="images/works4.jpg" alt="" />
+          <img src="images/works5.jpg" alt="" />
         </div>
       </div>
-    </div>
 
-    <div class="faq__item">
-      <button
-        class="faq__question"
-        type="button"
-        aria-expanded="false"
-      >
-        <span>Q. 初めてでも利用できますか？</span>
-        <span class="faq__icon"></span>
-      </button>
+      <button class="prev">＜</button>
+      <button class="next">＞</button>
 
-      <div class="faq__answer">
-        <div class="faq__answer-inner">
-          A. もちろんです。初めての方にも分かりやすくご案内します。
+      <div class="dots">
+        <button class="dot active"></button>
+        <button class="dot"></button>
+        <button class="dot"></button>
+        <button class="dot"></button>
+        <button class="dot"></button>
+      </div>
+    </section>
+
+    <section class="faq">
+      <div class="faq__inner">
+        <h2 class="faq__title">FAQ</h2>
+
+        <div class="faq__item">
+          <button class="faq__question" type="button" aria-expanded="false">
+            <span>Q. サービスの利用には予約が必要ですか？</span>
+            <span class="faq__icon"></span>
+          </button>
+
+          <div class="faq__answer">
+            <div class="faq__answer-inner">
+              A. はい、事前予約をお願いしています。<br />お問い合わせフォームよりご連絡ください。
+            </div>
+          </div>
+        </div>
+
+        <div class="faq__item">
+          <button class="faq__question" type="button" aria-expanded="false">
+            <span>Q. 初めてでも利用できますか？</span>
+            <span class="faq__icon"></span>
+          </button>
+
+          <div class="faq__answer">
+            <div class="faq__answer-inner">
+              A. もちろんです。初めての方にも分かりやすくご案内します。
+            </div>
+          </div>
+        </div>
+
+        <div class="faq__item">
+          <button class="faq__question" type="button" aria-expanded="false">
+            <span>Q. キャンセルはできますか？</span>
+            <span class="faq__icon"></span>
+          </button>
+
+          <div class="faq__answer">
+            <div class="faq__answer-inner">
+              A.
+              可能です。変更やキャンセルの際は、できるだけ早めにご連絡ください。
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-
-    <div class="faq__item">
-      <button
-        class="faq__question"
-        type="button"
-        aria-expanded="false"
-      >
-        <span>Q. キャンセルはできますか？</span>
-        <span class="faq__icon"></span>
-      </button>
-
-      <div class="faq__answer">
-        <div class="faq__answer-inner">
-          A. 可能です。変更やキャンセルの際は、できるだけ早めにご連絡ください。
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-</body>
+    </section>
+  </body>
 </html>

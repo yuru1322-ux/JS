@@ -23,17 +23,21 @@ body {
   overflow: hidden;
 }
 
-.slider-images img {
+
+/* 画像を横一列に並べて transform で動かす */
+.slider-track {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  transition: transform 1s ease;
+}
+.slider-track img {
+  flex: 0 0 100%;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  display: none;
 }
 
-/* 最初の画像だけ表示 */
-.slider-images img:first-child {
-  display: block;
-}
 
 /* 前へ・次へボタン */
 .prev,
